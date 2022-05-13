@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container " >
+      <!-- <div class="row-12">
+        <div class="col-12 mt-2">
+          <div class="input-group bg-gradient">
+            <input
+              type="search"
+              list="suggestion"
+              class="form-control weather_search bg-light"
+              placeholder="Enter your City"
+             />
+            <datalist id="suggestion"></datalist>
+          </div>
+        </div>
+      </div> -->
+      <div class="row-12">
+
+        <input type="search" list="suggestions" class="weather_search" placeholder="Enter Your City Name">
+        <datalist id="suggestions"></datalist>
+      </div>
+
+      <div class="row">
+        <div class="col-4 mt-2">
+          <h2 class="text-success weather_city">City</h2>
+          <p class="text-info weather_day" >Day</p>
+          <div class="col mt-2" id="weather_indicator--humidity">
+            <img src="./images/humidity.png" alt="" width="23px">
+            <span class="humid text-info">50</span>%
+          </div>
+          <div class="col mt-2" id="weather_indicator--wind">
+            <img src="./images/wind.png" alt="" width="23px">
+            <span class="value text-info">West, 5 </span> m/s
+          </div>
+          <div class="col mt-2" id=" weather_indicator--pressure">
+            <img src="../images/pressure.png" alt="" width="23px">
+            <span class="value text-info" id="press"> 1050 </span>  hPa
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center mt-4 ">
+          <img src="./images/clear-sky.png" alt="" class="card-img w-50 weather_image" />
+        </div>
+        <div class="col mt-2 d-flex justify-content-end weather_temperature">
+          <span class="value">+25</span> &deg;C
+        </div>
+      </div>
+
+      <div class="row-12 mt-lg-5 weather_forecast ">
+       
+        <div class="col-lg-2 " >
+          <div class="card" style="width: 15rem; margin-right: 245px;">
+            <img src="./images/rain.png" class="card-img-top" alt="..."  />
+            <div class="card-body">
+              <h5 class="card-title text-center">Day</h5>
+              <p class="card-text text-center">+23 &deg;C</p>
+              <!-- <a href="#" class="btn btn-primary"></a> -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-2 " >
+          <div class="card" style="width: 15rem;margin-left: 50px;">
+            <img src="./images/rain.png" class="card-img-top" alt="..."  />
+            <div class="card-body">
+              <h5 class="card-title text-center">Day</h5>
+              <p class="card-text text-center">+23 &deg;C</p>
+              <!-- <a href="#" class="btn btn-primary"></a> -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-2 " >
+          <div class="card" style="width: 15rem;margin-left: 100px;">
+            <img src="./images/rain.png" class="card-img-top" alt="..."  />
+            <div class="card-body">
+              <h5 class="card-title text-center">Day</h5>
+              <p class="card-text text-center">+23 &deg;C</p>
+              <!-- <a href="#" class="btn btn-primary"></a> -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-2 " >
+          <div class="card" style="width: 15rem;margin-left: 150px;">
+            <img src="./images/rain.png" class="card-img-top" alt="..."  />
+            <div class="card-body">
+              <h5 class="card-title text-center">Day</h5>
+              <p class="card-text text-center">+23 &deg;C</p>
+              <!-- <a href="#" class="btn btn-primary"></a> -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-2 " >
+          <div class="card" style="width: 15rem;margin-left: 200px;">
+            <img src="./images/rain.png" class="card-img-top" alt="..."  />
+            <div class="card-body">
+              <h5 class="card-title text-center">Day</h5>
+              <p class="card-text text-center">+23 &deg;C</p>
+              <!-- <a href="#" class="btn btn-primary"></a> -->
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <script src="./JavaScript/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>

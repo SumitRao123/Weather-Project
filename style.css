@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(5, 8, 114, 1),
+    rgba(7, 3, 53, 1)
+  );
+  color: #defaf9;
+  height: 100%;
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 22px;
+}
+
+.weather_search {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 20px;
+  color: inherit;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.weather_search::placeholder{
+	color: #fff;
+}
+
+.cd{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card-img-top{
+  height: 200px;
+  width: 150px;
+  align-self: center;
+}
+#weather_indicator--humidity::before {
+  background-image: url(./images/humidity.png);
+}
+
+#weather_indicator--wind::before {
+  background-image: url(./images/wind.png);
+}
+
+#weather_indicator--pressure::before {
+  background-image: url(./images/pressure.png);
+}
+.weather_forecast {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.weather_forecast_item {
+
+  border-radius: 10px;
+  margin: 0 10px 10px;
+  padding: 30px 5px 20px;
+  width: 300px;
+}
